@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+// Stylsheet
 import './App.css';
+// React Modules
+import { Component, Fragment } from 'react';
+// Components
+import Submission from './Submission.js'
+// Font Awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+render(){
+    return(
+
+      <Fragment>
+        <div className="container">
+          <ul>  
+              <li>
+                <h1><div className="arteria">arteria</div> <div className="description">— a new curatorial tool</div></h1>
+              </li>
+              <li className="arrow">              
+                <a href="#savedProjects"><FontAwesomeIcon icon={faArrowDown} /></a>            
+              </li>        
+          </ul>
+          <Submission />
+        </div>      
+    </Fragment>
+  )}
 }
 
 export default App;

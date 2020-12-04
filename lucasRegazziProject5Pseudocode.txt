@@ -1,0 +1,6 @@
+﻿Pseudocode
+1. Create an onClick listener to initialize new project on “add” button
+2. Create an onChange listener for all input components
+3. Create an event listener for the form submit on the project
+   1. Form data is returned, sent and stored as an object to firebase
+4. Information from firebase is reestablished as a saved project component on the web application under ‘saved projects’
