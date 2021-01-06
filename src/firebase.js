@@ -4,15 +4,14 @@ import firebase from "firebase/app";
 import "firebase/database";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCgK3oA9j9l2i7YVbx_uGJDbe-3g9uqG0E",
-    authDomain: "project5-31701.firebaseapp.com",
-    databaseURL: "https://project5-31701.firebaseio.com",
-    projectId: "project5-31701",
-    storageBucket: "project5-31701.appspot.com",
-    messagingSenderId: "361138521711",
-    appId: "1:361138521711:web:fb490152ae8004d51fef9a"
-};
+    apiKey: "AIzaSyAS2ZniN68tC6pujBy5cckqpNuvj4YHmUQ",
+    authDomain: "arteria-19e5f.firebaseapp.com",
+    projectId: "arteria-19e5f",
+    storageBucket: "arteria-19e5f.appspot.com",
+    messagingSenderId: "859275627034",
+    appId: "1:859275627034:web:9a9a334aac18669cabdfa3"
+}
 
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
 export default firebase;
